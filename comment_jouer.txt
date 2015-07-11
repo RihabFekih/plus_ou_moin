@@ -1,0 +1,7 @@
+la console choisit aléatoirement un nombre 
+le nombre est entre :
+   1 et 100 si vous choisisser le 1er niveau 
+   1 et 1000 (2emme niveau)
+   1 et 10000 (3emme niveau) 
+   
+vous devez deviner ce nombre myster !    
