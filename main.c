@@ -15,11 +15,14 @@ int main ( int argc, char** argv )
      printf("         1 = entre 1 et 100 \n");
      printf("         2 = entre 1 et 1000 \n");
      printf("         3 = entre 1 et 10000 \n");
-     printf("quel est le niveau que vous choisissez: ");
-     scanf("%d",&niveau);
+     do
+     {
+        printf("quel est le niveau que vous choisissez: ");
+        scanf("%d",&niveau);
+     }while((niveau<1) || (niveau>3));
      MAX = pow(10, niveau+1);
     compteur = 0 ; // initialiser le nombre des coups a zero
-    
+
      // Génération du nombre aléatoire
     srand(time(NULL));
     nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
